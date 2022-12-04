@@ -4,7 +4,7 @@ pipeline{
     stage("Git Checkout"){
       steps{
 
-            git 'https://github.com/abharmantri/calculator.git'
+            echo "hello friends"
       }
     }
   }
