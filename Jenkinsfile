@@ -10,9 +10,11 @@ pipeline{
     
     stage('Compile-package'){
       
+      steps{
+      
      bat 'mvn package'
       
-      
+      }
     
     }
   }
