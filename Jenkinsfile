@@ -4,8 +4,16 @@ pipeline{
     stage("Git Checkout"){
       steps{
 
-            echo "hello friends"
+            git 'https://github.com/abharmantri/calculator.git'
       }
+    }
+    
+    stage('Compile-package'){
+      
+     bat 'mvn package'
+      
+      
+    
     }
   }
 }
